@@ -1,0 +1,34 @@
+{
+  "name": "react-native-innerfirst-scrollview",
+  "title": "React Native Innerfirst Scrollview",
+  "version": "0.0.1",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Changdao/react-native-innerfirst-scrollview.git",
+    "baseUrl": "https://github.com/Changdao/react-native-innerfirst-scrollview"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Changdao",
+    "email": "jameslau@263.net"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": "0.57.1"
+  },
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.57.1",
+    "fbjs": "0.8.17"
+  }
+}
