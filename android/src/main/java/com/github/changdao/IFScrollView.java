@@ -242,6 +242,12 @@ public class IFScrollView extends ScrollView implements ReactClippingViewGroup, 
         case MotionEvent.ACTION_MOVE:
             
             if(mIFScrollDirection==0){
+              int xDis = Math.abs(x-mLastXIntercept);
+              int yDis = Math.abs(y-mLastYIntercept);
+              if(xDis<=1&&yDis<=1){
+                continueIntercept= false;
+                break;
+              }
               if(Math.abs(x-mLastXIntercept)>Math.abs(y-mLastYIntercept)){
                 //x distance > y distance, we guess finger want horizontal.
                 mIFScrollDirection=1;
@@ -266,7 +272,7 @@ public class IFScrollView extends ScrollView implements ReactClippingViewGroup, 
       }
       mLastXIntercept = x;
       mLastYIntercept = y;
-      Log.i("ReactNativeJS","InterceptTouchEvent direction:"+mIFScrollDirection +"  ACTION MOVE "+mLastXIntercept+' '+mLastYIntercept+" continueIntercept:"+continueIntercept);
+      //Log.i("ReactNativeJS","InterceptTouchEvent direction:"+mIFScrollDirection +"  ACTION MOVE "+mLastXIntercept+' '+mLastYIntercept+" continueIntercept:"+continueIntercept);
       try {
         if (continueIntercept && super.onInterceptTouchEvent(ev)) {
           NativeGestureUtil.notifyNativeGestureStarted(this, ev);

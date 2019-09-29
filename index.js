@@ -66,7 +66,7 @@ const IFScrollView =createReactClass(
 			return ReactNative.findNodeHandle(this._innerViewRef);
 		},
 		render:function(){
-			console.log('IFSCROLLVIEW','render()');
+			//console.log('IFSCROLLVIEW','render()');
 			const DEPRECATED_sendUpdatedChildFrames = !!this.props.DEPRECATED_sendUpdatedChildFrames;
 			const {stickyHeaderIndices} = this.props;
 			const hasStickyHeaders = stickyHeaderIndices && stickyHeaderIndices.length > 0;
