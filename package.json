@@ -1,16 +1,16 @@
 {
-  "name": "react-native-innerfirst-scrollview",
-  "title": "React Native Innerfirst Scrollview",
+  "name": "react-native-singledirection-scrollview",
+  "title": "React Native Single Direction Scrollview",
   "version": "0.0.1",
-  "description": "TODO",
+  "description": "A scrollview doesn't intercept touch event while the user is try to scroll horizontal. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Changdao/react-native-innerfirst-scrollview.git",
-    "baseUrl": "https://github.com/Changdao/react-native-innerfirst-scrollview"
+    "url": "git+https://github.com/Changdao/react-native-singledirection-scrollview.git",
+    "baseUrl": "https://github.com/Changdao/react-native-singledirection-scrollview"
   },
   "keywords": [
     "react-native"

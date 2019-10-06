@@ -177,7 +177,7 @@ KChartView.propTypes = {
 
 var RNIFScrollView = requireNativeComponent('RNIFScrollView');
 
-console.log('====>IFScrollView',IFScrollView);
+
 
 export default IFScrollView;
 
