@@ -3,7 +3,9 @@
 ## Overview
 
 ScrollView has bad experience on android while there is another scroll control inside it, because Android ScrollView will not send event to inside once it intercept the touchevent, for details, please refer to the source code of ScrollView.
-SingleDirection ScrollView split the behavior into two patterns, once detected that the gesture is trying to scroll horizontally throug the first several move events,  then the scrollview will not try to intercept the touchevent, even though the user change his mind, another patter is the native of ScrollView, which will not propagate event to inside.
+SingleDirection ScrollView only support one direction, the vertical scroll of the scrollview self, or horizontoal scroll of the inside control. Once SDScrollView detected that the gesture is trying to scroll horizontally throug the first several move events,  then the scrollview will not try to intercept the touchevent.
+
+
 
 ## Notice  
 
