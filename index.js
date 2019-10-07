@@ -131,20 +131,20 @@ const IFScrollView =createReactClass(
 	
 			return <RNIFScrollView {...props} ref={this._setScrollViewRef} >
 				<View
-			// {...contentSizeChangeProps}
-			// $FlowFixMe Invalid prop usage
-			style={contentContainerStyle}
-			ref={this._setInnerViewRef}
-			removeClippedSubviews={
-			  // Subview clipping causes issues with sticky headers on Android and
-			  // would be hard to fix properly in a performant way.
-			  Platform.OS === 'android' && hasStickyHeaders
-				? false
-				: this.props.removeClippedSubviews
-			}
-			collapsable={false}>
-			{this.props.children}
-		  </View>
+				// {...contentSizeChangeProps}
+				// $FlowFixMe Invalid prop usage
+				style={contentContainerStyle}
+				ref={this._setInnerViewRef}
+				removeClippedSubviews={
+				  // Subview clipping causes issues with sticky headers on Android and
+				  // would be hard to fix properly in a performant way.
+				  Platform.OS === 'android' && hasStickyHeaders
+					? false
+					: this.props.removeClippedSubviews
+				}
+				collapsable={false}>
+				{this.props.children}
+			  </View>
 			</RNIFScrollView>;
 		}
 	}
@@ -176,7 +176,6 @@ KChartView.propTypes = {
 */
 
 var RNIFScrollView = requireNativeComponent('RNIFScrollView');
-
 
 
 export default IFScrollView;
