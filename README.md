@@ -6,7 +6,7 @@ ScrollView has bad experience on android while there is another scroll control i
 This react-native-singledirection-scrollview will not stole the responder from inside horizontoal scroll control.
 
 <div class='row'>
-        <img src='https://github.com/Changdao/react-native-singledirection-scrollview/blob/master/img/demo.gif' width="300px"/>
+        <img src='https://github.com/Changdao/react-native-singledirection-scrollview/blob/master/demo.gif' width="300px"/>
 </div>
 
 ## Notice  
