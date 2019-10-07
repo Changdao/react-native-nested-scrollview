@@ -2,8 +2,8 @@
 
 ## Overview
 
-ScrollView has bad experience on android while there is another scroll control inside it, because Android ScrollView will not send event to inside once it intercept the touchevent, for details, please refer to the source code of ScrollView.
-SingleDirection ScrollView only support one direction, the vertical scroll of the scrollview self, or horizontoal scroll of the inside control. Once SDScrollView detected that the gesture is trying to scroll horizontally throug the first several move events,  then the scrollview will not try to intercept the touchevent.
+ScrollView has bad experience on android while there is another scroll control inside it, because when you scroll the inside control, the scrollview will stole the responder.
+This react-native-singledirection-scrollview will not stole the responder from inside horizontoal scroll control.
 
 <div class='row'>
         <img src='https://github.com/Changdao/react-native-singledirection-scrollview/blob/master/img/demo.gif' width="300px"/>
