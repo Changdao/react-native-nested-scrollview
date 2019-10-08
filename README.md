@@ -37,12 +37,12 @@ This componenent doesn't support iOS, because the experience in iOS is very bett
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.reactlibrary.InnerfirstScrollviewPackage;` to the imports at the top of the file
-  - Add `new InnerfirstScrollviewPackage()` to the list returned by the `getPackages()` method
+  - Add `import com.github.changdao.IFScrollViewPackage;` to the imports at the top of the file
+  - Add `new IFScrollViewPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':react-native-singledirection-scrollview'
-  	project(':react-native-singledirection-scrollview').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-singledirection-scrollview/android')
+  	project(':react-native-singledirection-scrollview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-singledirection-scrollview/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
@@ -63,6 +63,7 @@ import SDScrollView from 'react-native-singledirection-scrollview';
 const ScrollViewClass = Platform==='ios'?ScrollView:SDScrollView;
 
 render(){
+	// innerfirst is necessary to enable the effect
 	return <ScrollViewClass innerfirst={true}> </ScrollViewClass>
 }
 ```
