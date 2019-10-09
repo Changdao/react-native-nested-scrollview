@@ -64,7 +64,7 @@ const ScrollViewClass = Platform==='ios'?ScrollView:SDScrollView;
 
 render(){
 	// innerfirst is necessary to enable the effect
-	return <ScrollViewClass innerfirst={true}> </ScrollViewClass>
+	return <ScrollViewClass innerFirst={true}> </ScrollViewClass>
 }
 ```
 
