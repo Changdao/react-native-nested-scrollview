@@ -16,7 +16,7 @@ The singledirection scrollview doesn't support horizontalscroll.
 
 Many scrollview features doesn't test, if you met defect, please let me know.
 
-This library's code was excerpt from react-native and 
+This library's code was excerpt from react-native, as well as referred source code of android.widget.ScrollView.
 
 ## Getting started
 
