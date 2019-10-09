@@ -1,7 +1,7 @@
 {
   "name": "react-native-singledirection-scrollview",
   "title": "React Native Single Direction Scrollview",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A scrollview doesn't intercept touch event while the user is try to scroll horizontal. ",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "baseUrl": "https://github.com/Changdao/react-native-singledirection-scrollview"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "scrollview",
+    "conflict"
   ],
   "author": {
     "name": "Changdao",
