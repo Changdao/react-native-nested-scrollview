@@ -1,4 +1,4 @@
-# react-native-singledirection-scrollview
+# react-native-nested-scrollview
 
 ## Overview
 This React Native fixed direction ScrollView is Android only, which can significantly promote the Android nested scroll experience;
