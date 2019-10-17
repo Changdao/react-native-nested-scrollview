@@ -20,11 +20,11 @@ This library's code was excerpt from react-native, as well as referred source co
 
 ## Getting started
 
-`$ npm install react-native-nested-scrollview --save`
+`$ npm install react-native-nested2-scrollview --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-nested-scrollview`
+`$ react-native link react-native-nested2-scrollview`
 
 ### Manual installation
 
@@ -41,12 +41,12 @@ This componenent doesn't support iOS, because the experience in iOS is very bett
   - Add `new IFScrollViewPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-nested-scrollview'
-  	project(':react-native-nested-scrollview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-nested-scrollview/android')
+  	include ':react-native-nested2-scrollview'
+  	project(':react-native-nested2-scrollview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-nested2-scrollview/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-nested-scrollview')
+      compile project(':react-native-nested2-scrollview')
   	```
 
 
@@ -57,7 +57,7 @@ It's recommended that using SDScrollView as the following:
 ```
 ...
 import { ScrollView, Platform } from 'react';
-import SDScrollView from 'react-native-nested-scrollview';
+import SDScrollView from 'react-native-nested2-scrollview';
 ...
 
 const ScrollViewClass = Platform==='ios'?ScrollView:SDScrollView;
