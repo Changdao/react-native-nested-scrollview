@@ -1,7 +1,7 @@
 # react-native-singledirection-scrollview
 
 ## Overview
-
+This React Native fixed direction ScrollView is Android only, which can significantly promote the Android nested scroll experience;
 ScrollView has bad experience on android while there is another scroll control inside it, because when you scroll the inside control, the scrollview will stole the responder.
 This react-native-singledirection-scrollview will not stole the responder from inside horizontoal scroll control.
 
